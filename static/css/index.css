@@ -1,0 +1,364 @@
+.nav-link:focus-visible {
+    box-shadow: none;
+}
+
+
+/* Navbar CSS */
+
+.triangle-left {
+    position: absolute;
+    left: 24.5%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #10038C;
+    /* Triangle color, same as your gradient color */
+    transform: translateY(-50%);
+}
+
+@media (max-width: 769px) {
+    .triangle-left{
+        display: none;
+    }
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    /* Adjust this value to decrease distance */
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 50%;
+    transform-origin: bottom center;
+    transform: scaleX(0);
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    background-color: #ff3355;
+    /* Red color */
+    transform: scaleX(1);
+}
+
+.line-active::before {
+    background-color: #ff3355 !important;
+    transform: scaleX(1) !important;
+}
+
+.contact-btn {
+    background: linear-gradient(86.37deg, #FF5C00 -1.25%, #FFB800 96.56%), linear-gradient(267.51deg, rgba(255, 255, 255, 0.43) 4.83%, rgba(255, 255, 255, 0) 26.26%, rgba(255, 255, 255, 0.233055) 79.92%, rgba(255, 255, 255, 0.43) 98.58%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .contact-btn {
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+/* Carousal CSS */
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+
+
+/* Carousal CSS Style */
+
+
+.responsive-text {
+    font-size: 5vw;
+    /* Adjust the font size as needed */
+    line-height: 1.2;
+    /* Adjust line height if necessary */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .responsive-text {
+        font-size: 7vw;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .responsive-text {
+        font-size: 9vw;
+        /* Adjust font size for smaller mobile screens */
+    }
+}
+
+.carousel-caption{
+    left: 6% !important;
+}
+
+.carousel-button {
+    position: relative;
+    padding: 4px 12px;
+    /* Adjust padding for smaller sizes */
+    padding-right: 20px;
+    /* Increased for space for circle */
+    border: none;
+    background-color: #FF5C00;
+    color: white;
+    font-size: 14px;
+    /* Decreased font size for smaller screens */
+    overflow: visible;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform transition */
+}
+
+.carousel-button:hover {
+    transform: translateX(4px); /* Added a slight horizontal movement on hover */
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    right: -17px;
+    /* Adjust right positioning for smaller screens */
+    transform: translateY(-50%);
+    width: 31px;
+    /* Adjust circle size for smaller screens */
+    height: 31px;
+    /* Adjust circle size for smaller screens */
+    background-color: white;
+    border-radius: 50%;
+    transition: right 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Rotation animation for the circle */
+@keyframes circleRotate {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .carousel-button {
+        padding: 4px 10px;
+        /* Adjust padding for smaller sizes */
+        padding-right: 15px;
+        /* Increased for space for circle */
+        font-size: 10px;
+        /* Decreased font size for smaller screens */
+    }
+
+    .circle {
+        right: -19px;
+        /* Adjust right positioning for smaller screens */
+        width: 25px;
+        /* Adjust circle size for smaller screens */
+        height: 25px;
+        /* Adjust circle size for smaller screens */
+    }
+}
+
+.carousel-button:hover .circle {
+    right: -17px; /* Maintain original position */
+    animation: circleRotate 1s linear infinite; /* Apply the circle rotation animation on hover */
+}
+
+
+
+
+
+/* About CSS */
+
+.about-button {
+    padding: 5px 16px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(89.6deg, #0B0098 1.42%, #FF5C00 122.57%), linear-gradient(0deg, #1004A6, #1004A6);
+    border: none;
+    border-radius: 20px 20px 20px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: bounce 1.5s ease infinite alternate, colorChange 8s linear infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-button:hover {
+    background: linear-gradient(89.6deg, #0B0098 1.42%, #E64A00 122.57%), linear-gradient(0deg, #1004A6, #1004A6);
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Vision and mission card CSS */
+
+.animated-box {
+    animation: slideIn 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animated-img {
+    animation: fadeIn 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animated-title {
+    animation: fadeInUp 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animated-text {
+    animation: slideInLeft 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Committee Team Css */
+
+/* Define styles for the yellow box */
+
+.yellow-box {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%; /* Adjust the width according to your layout */
+    height: 50%; /* Adjust the height according to your layout */
+    background-color: #FFDB80;
+    z-index: -1;
+    border-radius: 0 0 60% 0; /* Rounded corner adjusted for responsiveness */
+}
+
+@media (max-width: 991.98px) {
+    .teamStyle {
+        margin-top: 1rem !important /* Apply margin-top for col-md-3 */
+    }
+}
+
+/* Media query for larger screens (just an example, adjust as needed) */
+@media (min-width: 992px) {
+    .teamStyle {
+        margin-top: 3rem !important; /* Apply margin-top for col-md-3 */
+    }
+}
+
+
+/* Project & Events CSS */
+
+@media (max-width: 550px) {
+    .view-project-title{
+        display: none;
+    }
+}
+
+
+/* Footer CSS */
+
+@media (max-width: 769px) {
+    .footer-img{
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        text-align: right;
+    }
+}
+
