@@ -5,6 +5,12 @@
 
 /* Navbar CSS */
 
+.header-nav-link {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    text-align: left;
+}
+
 .triangle-left {
     position: absolute;
     left: 24.5%;
@@ -19,7 +25,7 @@
 }
 
 @media (max-width: 769px) {
-    .triangle-left{
+    .triangle-left {
         display: none;
     }
 }
@@ -113,6 +119,9 @@
     /* Adjust the font size as needed */
     line-height: 1.2;
     /* Adjust line height if necessary */
+    font-family: IBM Plex Sans;
+
+    font-weight: 600;
 }
 
 /* Media query for smaller screens */
@@ -131,7 +140,7 @@
     }
 }
 
-.carousel-caption{
+.carousel-caption {
     left: 6% !important;
 }
 
@@ -148,11 +157,13 @@
     /* Decreased font size for smaller screens */
     overflow: visible;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform transition */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Added transform transition */
 }
 
 .carousel-button:hover {
-    transform: translateX(4px); /* Added a slight horizontal movement on hover */
+    transform: translateX(4px);
+    /* Added a slight horizontal movement on hover */
 }
 
 .circle {
@@ -176,6 +187,7 @@
     0% {
         transform: translateY(-50%) rotate(0deg);
     }
+
     100% {
         transform: translateY(-50%) rotate(360deg);
     }
@@ -203,8 +215,10 @@
 }
 
 .carousel-button:hover .circle {
-    right: -17px; /* Maintain original position */
-    animation: circleRotate 1s linear infinite; /* Apply the circle rotation animation on hover */
+    right: -17px;
+    /* Maintain original position */
+    animation: circleRotate 1s linear infinite;
+    /* Apply the circle rotation animation on hover */
 }
 
 
@@ -237,6 +251,7 @@
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(-8px);
     }
@@ -246,12 +261,31 @@
     0% {
         filter: hue-rotate(0deg);
     }
+
     100% {
         filter: hue-rotate(360deg);
     }
 }
 
 /* Vision and mission card CSS */
+
+.card-title-style {
+    font-family: IBM Plex Sans;
+    font-weight: 700;
+    text-align: left;
+}
+
+.card-text-style {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    text-align: left;
+}
+
+.card-subtext-style{
+    font-family: IBM Plex Sans;
+    font-weight: 600;
+    text-align: left;
+}
 
 .animated-box {
     animation: slideIn 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -274,6 +308,7 @@
         transform: translateX(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -284,6 +319,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -294,6 +330,7 @@
         transform: translateY(50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -305,6 +342,7 @@
         transform: translateX(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -321,31 +359,36 @@
     position: absolute;
     bottom: 0;
     left: 15%;
-    width: 70%; /* Adjust the width according to your layout */
-    height: 50%; /* Adjust the height according to your layout */
+    width: 70%;
+    /* Adjust the width according to your layout */
+    height: 50%;
+    /* Adjust the height according to your layout */
     background-color: #FFDB80;
     z-index: -1;
-    border-radius: 0 0 60% 0; /* Rounded corner adjusted for responsiveness */
+    border-radius: 0 0 60% 0;
+    /* Rounded corner adjusted for responsiveness */
 }
 
 @media (max-width: 991.98px) {
     .teamStyle {
-        margin-top: 1rem !important /* Apply margin-top for col-md-3 */
+        margin-top: 1rem !important
+            /* Apply margin-top for col-md-3 */
     }
 }
 
 /* Media query for larger screens (just an example, adjust as needed) */
 @media (min-width: 992px) {
     .teamStyle {
-        margin-top: 3rem !important; /* Apply margin-top for col-md-3 */
+        margin-top: 3rem !important;
+        /* Apply margin-top for col-md-3 */
     }
 }
 
 
 /* Project & Events CSS */
 
-@media (max-width: 550px) {
-    .view-project-title{
+@media (max-width: 770px) {
+    .view-project-title {
         display: none;
     }
 }
@@ -354,11 +397,10 @@
 /* Footer CSS */
 
 @media (max-width: 769px) {
-    .footer-img{
+    .footer-img {
         position: absolute;
         width: 50%;
         height: 60%;
         text-align: right;
     }
 }
-

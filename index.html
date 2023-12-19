@@ -8,17 +8,19 @@
     <title>Chattrapati Sambhajinagar First</title>
 
     <link rel="icon" type="image/x-icon" href="./static/icon/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./static/css/index.css">
 </head>
 
-<body data-bs-spy="scroll"  data-bs-target="navbar-root" data-bs-smooth-scroll="true" tabindex="0">
-
+<body data-bs-spy="scroll" data-bs-target="navbar-root" data-bs-smooth-scroll="true" tabindex="0">
 
     <!-- Navbar -->
-    <nav id="navbar-root" class="navbar navbar-expand-md navbar-dar py-0 shadow" aria-label="Offcanvas navbar large">
+    <nav id="navbar-root" class="navbar navbar-expand-md navbar-dar py-0 shadow" preventScrollReset>
         <div class="container-fluid px-0">
 
             <div class="col-3 text-center bg-white" style="height: 100%">
@@ -35,7 +37,8 @@
                 style="background: linear-gradient(81.62deg, #0B0098 0.23%, #FF5C00 118.83%), linear-gradient(0deg, #FFFFFF, #FFFFFF);">
 
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CSN FIRST</h5>
+                    <h5 class="offcanvas-title header-nav-link" style="font-weight: bold;" id="offcanvasNavbar2Label">
+                        CSN FIRST</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -44,20 +47,21 @@
                     <div class="triangle-left"></div>
                     <ul class="navbar-nav flex-grow-1 pe-3">
                         <li class="nav-item mx-lg-5 mx-md-4">
-                            <a class="nav-link line-active text-white" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link line-active text-white header-nav-link" aria-current="page"
+                                href="#home">Home</a>
                         </li>
                         <li class="nav-item me-lg-5 me-md-4">
-                            <a class="nav-link text-white" href="#about">About</a>
+                            <a class="nav-link text-white header-nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item me-lg-5 me-md-4">
-                            <a class="nav-link text-white" href="#projects">Projects</a>
+                            <a class="nav-link text-white header-nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item me-lg-5 me-md-4">
-                            <a class="nav-link text-white" href="#directors">Director's</a>
+                            <a class="nav-link text-white header-nav-link" href="#directors">Director's</a>
                         </li>
                         <li class="mt-2 mt-md-0">
                             <a href="#contact" type="button"
-                                class="btn rounded-pill px-4 contact-btn text-white">Contact
+                                class="btn rounded-pill link1 px-4 contact-btn text-white header-nav-link">Contact
                                 Us</a>
                         </li>
                     </ul>
@@ -65,7 +69,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Home -->
     <div id="home">
@@ -83,7 +86,7 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1 class="responsive-text">Chhatrapati <br /> Sambhajinagar <br /> First</h1>
-                            <button class="carousel-button">
+                            <button onclick="visit()" class="carousel-button" style="font-family: IBM Plex Sans;">
                                 Know More
                                 <span class="circle">
                                     <svg style="color: black;
@@ -104,7 +107,7 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1 class="responsive-text">Chhatrapati <br /> Sambhajinagar <br /> First</h1>
-                            <button class="carousel-button">
+                            <button onclick="visit()" class="carousel-button">
                                 Know More
                                 <span class="circle">
                                     <svg style="color: black;
@@ -127,7 +130,7 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1 class="responsive-text">Chhatrapati <br /> Sambhajinagar <br /> First</h1>
-                            <button class="carousel-button">
+                            <button onclick="visit()" class="carousel-button">
                                 Know More
                                 <span class="circle">
                                     <svg style="color: black;
@@ -148,14 +151,15 @@
     <!-- About Us -->
     <div id="about">
         <div class="container pt-5 pb-4">
-            <button type="button" class="about-button">About Us</button>
+            <button type="button" class="about-button" style="font-family: IBM Plex Sans;">About Us</button>
 
             <div class="mt-4">
-                <span class="h3" style="color: #160590;">Mecc Chhatrapati</span><br />
+                <span class="h3" style="color: #160590;font-family: IBM Plex Sans;font-weight: 600;">Mecc
+                    Chhatrapati</span><br />
                 <span class="h3" style="color: #FF5C00;font-weight: bold;">Sambhajinagar First</span>
             </div>
 
-            <p class="mt-5" style="color: #787878;">
+            <p class="mt-5" style="color: #787878;font-family: IBM Plex Sans;">
                 Marathwada Environment Care Cluster was formed to protect our mother earth from pollution.
                 Organizations
                 such as MASSIA, AISA, WIA, CII, CMIA, Vyapari Mahasangh, MGM, MIT, MCTC, MIDC and MPCB have joined
@@ -176,7 +180,7 @@
         display: block;">
 
         <div class="container mt-4">
-            <p class="mt-5" style="color: #787878;">
+            <p class="mt-5" style="color: #787878;font-family: IBM Plex Sans;">
                 While extending the work of the MECC in theCity of Chattrapati Sambhajinagar it was launched under
                 the
                 Project Chattrapati Sambhajinagar First.
@@ -187,74 +191,87 @@
                 of the
                 City of Chattrapati Sambhajinagar. “City before Self”
             </p>
+        </div>
+    </div>
 
-            <div class="mt-5" style="padding-top: 60px;">
-                <h1 style="font-weight: bold;font-family: 'IBM Plex Sans', sans-serif;">
-                    <span style="color: #1004A6;">VALUE, <br />
-                        VISION,& </span><br />
-                    <span style="color: #FF5C00;">MISSION</span>
-                </h1>
+    <!-- Mission && Vission -->
+    <div id="vision" class="container">
+        <div class="mt-5" style="padding-top: 60px;">
+            <h1 style="font-weight: bold;font-family: IBM Plex Sans;">
+                <span style="color: #1004A6;">VALUE, <br />
+                    VISION,& </span><br />
+                <span style="color: #FF5C00;">MISSION</span>
+            </h1>
 
-                <div class="row gy-5 g-md-5 mt-3 mb-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card" style="border-radius: 0 0 100px 0; height: 65vh;max-height: 500px ;background-color: #3364F6;">
-                            <div style="position: relative;">
-                                <span class="box p-4 animated-box"
-                                    style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
-                            </div>
-                            <div class="card-body text-white">
-                                <img src="./static/images/card/diamondImg.png" class="img-fluid animated-img"
-                                    style="max-width: 20%;" alt="...">
-                                <div class="mt-3">
-                                    <h5 class="card-title animated-title" style="font-size: 2rem;">Value</h5>
-                                    <p class="card-text animated-text">Value MECC Chattrapati <br /> Sambhajinagar First
-                                        <br /><b>“City
-                                            Before Self”</b></p>
-                                </div>
+            <div class="row gy-5 g-md-5 mt-3 mb-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card"
+                        style="border-radius: 0 0 100px 0; height: 65vh;max-height: 500px ;background-color: #3364F6;">
+                        <div style="position: relative;">
+                            <span class="box p-4 animated-box"
+                                style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
+                        </div>
+                        <div class="card-body text-white">
+                            <img src="./static/images/card/diamondImg.png" class="img-fluid animated-img"
+                                style="max-width: 20%;" alt="...">
+                            <div class="mt-3">
+                                <h5 class="card-title animated-title card-title-style" style="font-size: 2rem;">Value
+                                </h5>
+                                <p class="card-text card-text-style animated-text">Value MECC Chattrapati <br />
+                                    Sambhajinagar First
+                                    <br /><span class="card-subtext-style">“City
+                                        Before Self”</span>
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card" style="border-radius: 100px 0 0 0; height: 65vh;max-height: 500px;background-color: 
-                        #FF5C00;">
-                            <div class="card-body text-white mt-5">
-                                <img src="./static/images/card/eyeImg.png" class="img-fluid animated-img" style="max-width: 20%;"
-                                    alt="...">
-                                <div class="mt-3">
-                                    <h5 class="card-title animated-title" style="font-size: 2rem;">Vision</h5>
-                                    <p class="card-text animated-text">Encourage a strong union of like minded citizens from the
-                                        entire spectrum of society to forge cooperation with Government and
-                                        Non-Government organizations to ....
-                                    </p>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="box p-4 animated-box"
-                                    style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="border-radius: 100px 0 0 0; height: 65vh;max-height: 500px;background-color: 
+                    #FF5C00;">
+                        <div class="card-body text-white mt-5">
+                            <img src="./static/images/card/eyeImg.png" class="img-fluid animated-img"
+                                style="max-width: 20%;" alt="...">
+                            <div class="mt-3">
+                                <h5 class="card-title card-title-style animated-title" style="font-size: 2rem;">Vision
+                                </h5>
+                                <p class="card-text card-text-style animated-text">Encourage a strong union of like
+                                    minded citizens
+                                    from the
+                                    entire spectrum of society to forge cooperation with Government and
+                                    Non-Government organizations to ....
+                                </p>
                             </div>
                         </div>
+                        <div>
+                            <span class="box p-4 animated-box"
+                                style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card" style="border-radius: 0 0 0 100px; height: 65vh;max-height: 500px;background-color: 
-                        #DC276E;">
-                            <div>
-                                <span class="box p-4 animated-box"
-                                    style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
-                            </div>
-                            <div class="card-body text-white">
-                                <img src="./static/images/card/mission.png" class="img-fluid animated-img" style="max-width: 20%;"
-                                    alt="...">
-                                <div class="mt-3">
-                                    <h5 class="card-title animated-title" style="font-size: 2rem;">Mission</h5>
-                                    <p class="card-text animated-text">To participate and positively influence processes to<b>
-                                            transform
-                                            Chattrapati Sambhajinagar city</b> into Liveable and Loveable in
-                                        <b>5 years “TOP 25 BY 2025”.</b>
-                                    </p>
-                                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="border-radius: 0 0 0 100px; height: 65vh;max-height: 500px;background-color: 
+                    #DC276E;">
+                        <div>
+                            <span class="box p-4 animated-box"
+                                style="height: 100%; background-color: #FFB800; float: right; width: 50px;"></span>
+                        </div>
+                        <div class="card-body text-white">
+                            <img src="./static/images/card/mission.png" class="img-fluid animated-img"
+                                style="max-width: 20%;" alt="...">
+                            <div class="mt-3">
+                                <h5 class="card-title card-title-style animated-title" style="font-size: 2rem;">Mission
+                                </h5>
+                                <p class="card-text card-text-styleanimated-text">To participate and positively
+                                    influence processes
+                                    to<span class="card-subtext-style">
+                                        transform
+                                        Chattrapati Sambhajinagar city</span> into Liveable and Loveable in
+                                    <span class="card-subtext-style">5 years “TOP 25 BY 2025”.</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -263,18 +280,17 @@
         </div>
     </div>
 
-    <!-- CSN Committee Team -->
+    <!-- CSN Directors Team -->
     <div id="directors" class="mb-5" style="margin-top: 100px;">
         <div id="team-heading" class="container">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 align-items-center">
                 <div class="col">
                     <span class="px-2"
-                        style="background-color: #FFEECD;color: #646464;font-family: 'IBM Plex Sans', sans-serif; padding-top: 3px; padding-bottom: 3px; font-weight: bold;">
+                        style="background-color: #FFEECD;color: #646464;font-family: IBM Plex Sans; padding-top: 3px; padding-bottom: 3px; font-weight: bold;">
                         Team
                     </span>
                     <br />
-                    <h1 style="font-weight: bold;font-family: 'IBM Plex Sans', sans-serif;font-size: 40px;"
-                        class="mt-2">
+                    <h1 style="font-weight: bold;font-family: IBM Plex Sans;font-size: 40px;" class="mt-2">
                         <span style="color: #150492">Chhatrapati</span><br />
                         <span style="color: #FF5C00;">Sambhajinagar <br />
                             First </span><br />
@@ -288,9 +304,9 @@
                                 <img src="./static/images/members/mukundbhogale.png" style="width: 75%;"
                                     class="card-img-top" alt="Mukund Bhogale">
                             </div>
-                            <div class="card-body">
-                                <span style="font-weight: bold;">Mr.Mukund Bhogale</span>
-                                <span style="color: #5E5E5E; font-size: 12px;">
+                            <div>
+                                <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Mukund Bhogale</span>
+                                <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                                     <p>President</p>
                                 </span>
                             </div>
@@ -301,8 +317,8 @@
                                 <img src="./static/images/members/mukundkulkarni.png" style="width: 85%;"
                                     class="card-img-top" alt="Mukund Bhogale">
                             </div>
-                            <div class="card-body">
-                                <span style="font-weight: bold;">Mr.Mukund Kulkarni</span>
+                            <div>
+                                <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Mukund Kulkarni</span>
                             </div>
                         </div>
                     </div>
@@ -316,9 +332,9 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/BS-Khose.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.B. S.Khose</span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.B. S.Khose</span>
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Founder President</p>
                         </span>
                     </div>
@@ -326,9 +342,9 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Ram-Bhogle.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr. Ram Bhogale</span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr. Ram Bhogale</span>
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Past President</p>
                         </span>
                     </div>
@@ -336,9 +352,9 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Rishi-Bagala.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Rishi Bagla</span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Rishi Bagla</span>
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Past President</p>
                         </span>
                     </div>
@@ -349,10 +365,10 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Mansing-Pawar.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Mansingh Pawar
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Mansingh Pawar
                         </span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Past President</p>
                         </span>
                     </div>
@@ -360,9 +376,9 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Pritish-Chatterjee.png"
                         style="width: 60%;border-radius: 40px 0 40px 0" class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Pritish Chatterjee</span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Pritish Chatterjee</span>
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Past President</p>
                         </span>
                     </div>
@@ -370,9 +386,9 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/kakkad.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Ranjeet Kakkad</span>
-                        <span style="color: #5E5E5E; font-size: 12px;">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Ranjeet Kakkad</span>
+                        <span style="color: #5E5E5E; font-size: 12px;font-family: IBM Plex Sans;">
                             <p>Director & Immediate Past President</p>
                         </span>
                     </div>
@@ -383,23 +399,23 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Prashant-Deshpande.png"
                         style="width: 60%;border-radius: 40px 0 40px 0" class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Prashant Deshpande
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Prashant Deshpande
                         </span>
                     </div>
                 </div>
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Ritesh-Mishra.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Ritesh Mishra</span>
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Ritesh Mishra</span>
                     </div>
                 </div>
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Mansing-Pawar.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Satish Lonikar</span>
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Satish Lonikar</span>
                     </div>
                 </div>
 
@@ -407,23 +423,23 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Balkrishna-Bhakare.png"
                         style="width: 60%;border-radius: 40px 0 40px 0" class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Balkrishna Bhakare
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Balkrishna Bhakare
                         </span>
                     </div>
                 </div>
                 <div class="col" style="text-align: center;">
-                    <img src="./static/images/members/Sunil-Choudhary.png" style="width: 60%;border-radius: 40px 0 40px 0"
-                        class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Sunil Choudhary</span>
+                    <img src="./static/images/members/Sunil-Choudhary.png"
+                        style="width: 60%;border-radius: 40px 0 40px 0" class="card-img-top" alt="Mukund Bhogale">
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Sunil Choudhary</span>
                     </div>
                 </div>
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Shaikh-Habib.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Mr.Shaikh Habib</span>
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Mr.Shaikh Habib</span>
                     </div>
                 </div>
 
@@ -431,8 +447,8 @@
                 <div class="col" style="text-align: center;">
                     <img src="./static/images/members/Kamaal-Rao.png" style="width: 60%;border-radius: 40px 0 40px 0"
                         class="card-img-top" alt="Mukund Bhogale">
-                    <div class="card-body">
-                        <span style="font-weight: bold;">Kamaal Rao</span>
+                    <div>
+                        <span style="font-weight: bold;font-family: IBM Plex Sans;">Kamaal Rao</span>
                     </div>
                 </div>
             </div>
@@ -443,19 +459,21 @@
     <div id="projects" class="container pt-5 mb-5"
         style="text-align: center; background: linear-gradient(180deg, rgba(255, 255, 242, 0) 0%, rgba(255, 255, 242, 0.277975) 14.76%, rgba(255, 255, 242, 0.67) 43.38%, rgba(255, 255, 242, 0.327365) 73.53%, rgba(255, 255, 242, 0) 100%);">
         <div class="pb-5">
-            <span style="font-size: 50px; font-weight: bold;color: #FF5C00;text-align: left;">Project’s & Events</span>
-            <span style="font-size: larger; font-weight: 500"; class="ms-2">2019-2020</span>
+            <span
+                style="font-size: 50px; font-family: IBM Plex Sans;font-weight: bold;color: #FF5C00;text-align: left;">Project’s
+                & Events</span>
+            <span style="font-size: larger; font-weight: 500;font-family: IBM Plex Sans;" class="ms-2">2019-2020</span>
         </div>
 
         <!-- Project -> 1 -->
-        <div class="row justify-content-center mt-5">
+        <div id="project-info" class="row justify-content-center mt-5">
             <div class="mb-3" style="max-width: 700px;">
                 <div class="row g-0">
                     <div class="col-md-6 order-md-1 order-2 pe-5 pe-md-0" style="align-self: center;">
-                        <div class="card-body" style="text-align: right;">
+                        <div class="card-body" style="text-align: right;font-family: IBM Plex Sans;">
                             <h5 class="card-title" style="font-weight: bold;">Meeting with <br />
                                 Rickshaw Union <br /> Leaders</h5>
-                            <p class="card-text mt-3" style="font-family: math;">Meeting was
+                            <p class="card-text mt-3">Meeting was
                                 conducted with all major
                                 Rickshaw Union Leaders to inform them regarding the forthcoming Survey and Training
                                 Program for them.</p>
@@ -472,17 +490,17 @@
 
 
         <!-- Project -> 2 -->
-        <div class="row justify-content-center mt-3">
+        <div id="project-info" class="row justify-content-center mt-3">
             <div class="mb-3" style="max-width: 700px;">
                 <div class="row g-0">
                     <div class="col-md-6">
                         <img src="./static/images/project/treeCampaign.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-6 ps-5 ps-md-0" style="align-self: center;">
-                        <div class="card-body" style="text-align: left;">
+                        <div class="card-body" style="text-align: left;font-family: IBM Plex Sans;">
                             <h5 class="card-title" style="font-weight: bold;">Pain Free Tree<br />
                                 Campaign</h5>
-                            <p class="card-text mt-3" style="font-family: math;">Campaign of Pain
+                            <p class="card-text mt-3">Campaign of Pain
                                 Free Trees was carried out. Students of the Dramatics Department of BAMU prepared a
                                 Skit
                                 on this Subject in a number of Colleges to spread awareness. Nails from the trees
@@ -499,14 +517,87 @@
 
 
         <!-- Project -> 3 -->
-        <div class="row justify-content-center mt-3">
+        <div id="project-info" class="row justify-content-center mt-3">
             <div class="mb-3" style="max-width: 700px;">
                 <div class="row g-0">
                     <div class="col-md-6 order-md-1 order-2 pe-5 pe-md-0" style="align-self: center;">
-                        <div class="card-body" style="text-align: right;">
+                        <div class="card-body" style="text-align: right;font-family: IBM Plex Sans;">
                             <h5 class="card-title" style="font-weight: bold;">Meeting with <br />
                                 Mr.Imtiyaz Jaleel</h5>
-                            <p class="card-text mt-3" style="font-family: math;">Team Chattrapati SambhajinagarFirst
+                            <p class="card-text mt-3">Team Chattrapati SambhajinagarFirst
+                                presented the Memorandum of Demands on Railways to MP Mr. Imtiaz Jaleel on the
+                                background of his Meeting at Nanded DRM </p>
+                            <p class="card-text"><small class="text-body-secondary">CATEGORY
+                                    2019-20 , Meeting</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <img src="./static/images/project/imtiyazJaleel.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project -> 4 -->
+        <div id="project-info" class="row justify-content-center mt-3">
+            <div class="mb-3" style="max-width: 700px;">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1 order-2 pe-5 pe-md-0" style="align-self: center;">
+                        <div class="card-body" style="text-align: right;font-family: IBM Plex Sans;">
+                            <h5 class="card-title" style="font-weight: bold;">Meeting with <br />
+                                Rickshaw Union <br /> Leaders</h5>
+                            <p class="card-text mt-3">Meeting was
+                                conducted with all major
+                                Rickshaw Union Leaders to inform them regarding the forthcoming Survey and Training
+                                Program for them.</p>
+                            <p class="card-text"><small class="text-body-secondary">CATEGORY
+                                    2019-20 , Meeting</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <img src="./static/images/project/rickshawUnion.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project -> 5 -->
+        <div id="project-info" class="row justify-content-center mt-3">
+            <div class="mb-3" style="max-width: 700px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./static/images/project/treeCampaign.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6 ps-5 ps-md-0" style="align-self: center;">
+                        <div class="card-body" style="text-align: left;font-family: IBM Plex Sans;">
+                            <h5 class="card-title" style="font-weight: bold;">Pain Free Tree<br />
+                                Campaign</h5>
+                            <p class="card-text mt-3">Campaign of Pain
+                                Free Trees was carried out. Students of the Dramatics Department of BAMU prepared a
+                                Skit
+                                on this Subject in a number of Colleges to spread awareness. Nails from the trees
+                                were
+                                removed from Delhi Gate to Harsul Naka in association with the Students from Maulana
+                                Azad College.</p>
+                            <p class="card-text"><small class="text-body-secondary">CATEGORY
+                                    2019-20 , Meeting</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project -> 6 -->
+        <div id="project-info" class="row justify-content-center mt-3">
+            <div class="mb-3" style="max-width: 700px;">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1 order-2 pe-5 pe-md-0" style="align-self: center;">
+                        <div class="card-body" style="text-align: right;font-family: IBM Plex Sans;">
+                            <h5 class="card-title" style="font-weight: bold;">Meeting with <br />
+                                Mr.Imtiyaz Jaleel</h5>
+                            <p class="card-text mt-3">Team Chattrapati SambhajinagarFirst
                                 presented the Memorandum of Demands on Railways to MP Mr. Imtiaz Jaleel on the
                                 background of his Meeting at Nanded DRM </p>
                             <p class="card-text"><small class="text-body-secondary">CATEGORY
@@ -522,19 +613,24 @@
 
         <!-- View All Button -->
         <div class="mt-5">
-            <span class="p-2 ps-4 pe-4 view-project-title" style="background-color: #FFF7E2;color: #0000009E;">View
-                all
+            <span class="p-2 ps-4 pe-4 view-project-title"
+                style="font-family: IBM Plex Sans;background-color: #FFF7E2;color: #0000009E;">View
+                more
                 project and events
-                click view all button </span>
-            <button type="button" class="p-1 px-4 py-2" style="background-color: 
-            #FF5C00; color: white; border: none;">View All</button>
+                click view more button </span>
+            <button onclick="load_projects()" type="button" class="p-1 px-4 py-2" style="background-color: 
+            #FF5C00; color: white; border: none;">
+                <span id="loading" hidden>
+                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+                </span>
+                <span id="view-text">View More</span>    
+            </button>
         </div>
     </div>
 
-
     <!-- Footer -->
     <div id="footer" style="margin-top: 200px;">
-
         <div class="row g-0 mb-4 shadow-lg">
             <div class="col-md-3 p-4 px-5" style="align-self: center;">
                 <img src="./static/images/logoImg2.png" class="card-img-top" alt="">
@@ -542,10 +638,10 @@
             <div class="col-md-9 d-flex align-items-center py-4"
                 style="background: linear-gradient(81.62deg, #0B0098 0.23%, #FF5C00 118.83%), linear-gradient(0deg, #FFFFFF, #FFFFFF);">
                 <div class="card-body text-center text-white px-5">
-                    <h5 class="card-title" style="text-align: left;text-transform: uppercase; font-weight: bold;">
+                    <h5 style="text-align: left;font-family: Montserrat;text-transform: uppercase; font-weight: bold;">
                         MECC
                         AND Chhatrapati Sambhajinagar First</h5>
-                    <p class="card-text mt-2" style="text-align: left;font-family: system-ui;">While extending the
+                    <p class="mt-2" style="text-align: left;font-family: Montserrat">While extending the
                         work
                         of the Company in the City of Chhatrapati Sambhajinagar Firstit was
                         launched under the Project Chhatrapati Sambhajinagar First
@@ -558,15 +654,15 @@
             <div class="col-sm-8 col-md-5 ps-5">
                 <div class="card-body">
                     <h5 class="card-title"
-                        style="font-weight: bold; background-image: linear-gradient(81.62deg, #0B0098 0.23%, #FF5C00 118.83%), linear-gradient(0deg, #434343, #434343); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline;">
+                        style="font-family: IBM Plex Sans;font-weight: bold; background-image: linear-gradient(81.62deg, #0B0098 0.23%, #FF5C00 118.83%), linear-gradient(0deg, #434343, #434343); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline;">
                         GET IN TOUCH</h5>
-                    <p class="mt-3"
-                        style="color: #434343;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small;">T
-                        +91
-                        98904 50783 <br>
-                        Email: info@aurangabadfirst.org
+                    <p class="mt-3" style="color: #434343;">
+                        <span style="font-family: IBM Plex Sans;font-weight: 500;">T
+                            +91
+                            98904 50783 </span><br><span style="font-family: Open Sans">
+                            Email: info@aurangabadfirst.org</span>
                     </p>
-                    <p style="color: #434343;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small;">
+                    <p style="color: #434343;font-family: IBM Plex Sans;font-weight: 500;">
                         4th
                         Floor, Shreehari, Plot No. 36, Gut No. <br>
                         41, Golwadi T Point, Paithan Road, <br>
@@ -576,7 +672,7 @@
             <div class="col-sm-4 col-md-2 footer-menu">
                 <div class="card-body" style="position: relative; z-index: 1;padding-left:  1.8rem;">
                     <ul class="nav justify-content-center"
-                        style="display: flex; flex-direction: column; font-weight: 500; font-size: larger;">
+                        style="display: flex; flex-direction: column; font-family: IBM Plex Sans;font-weight: 600; font-size: x-large;">
                         <li><a href="#home" class="nav-link pb-0" style="color: #685E5E;">Home</a></li>
                         <li><a href="#about" class="nav-link pb-0" style="color: #685E5E;">About</a></li>
                         <li><a href="#projects" class="nav-link pb-0" style="color: #685E5E;">Projects</a></li>
@@ -590,7 +686,8 @@
             </div>
         </div>
 
-        <div class="row g-0 justify-content-center text-center mb-5 mt-5 mt-md-0" style="color: #8B8C8D;">
+        <div class="row g-0 justify-content-center text-center mb-5 mt-5 mt-md-0"
+            style="color: #8B8C8D;font-family: IBM Plex Sans;">
             <div class="col-md-auto">
                 © 2023 All rights reserved.
             </div>
@@ -656,7 +753,6 @@
 
     </div>
 
-    </div>
     <script src="./static/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -664,9 +760,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
 </body>
 
