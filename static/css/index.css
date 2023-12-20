@@ -267,6 +267,16 @@
     }
 }
 
+/* Styling for the image */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative; /* Set parent container as relative */
+    z-index: 0; /* Ensure it's in front of the gradient boxes */
+}
+
+
 /* Vision and mission card CSS */
 
 .card-title-style {
