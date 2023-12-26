@@ -365,19 +365,7 @@
 
 /* Define styles for the yellow box */
 
-.yellow-box {
-    position: absolute;
-    bottom: 0;
-    left: 33%;
-    width: 33%;
-    /* Adjust the width according to your layout */
-    height: 50%;
-    /* Adjust the height according to your layout */
-    background-color: #FFDB80;
-    z-index: -1;
-    border-radius: 0 0 60% 0;
-    /* Rounded corner adjusted for responsiveness */
-}
+
 
 @media (max-width: 991.98px) {
     .teamStyle {
